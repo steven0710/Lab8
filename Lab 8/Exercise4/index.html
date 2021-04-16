@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link href="./myStyle.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1>Background</h1>
+    <label>     Red Value(0-255):</label>
+    <input type = "text" id = "red">
+    <br>
+    <label>      Blue Value(0-255):</label>
+    <input type = "text" id = "blue">
+
+    <br>
+    <label>      Green Value(0-255):</label>
+    <input type = "text" id = "green">
+    
+    <br>
+
+    <h1>Border</h1>
+    <label>     Red Value(0-255):</label>
+    <input type = "text" id = "red2">
+    <br>
+    <label>      Blue Value(0-255):</label>
+    <input type = "text" id = "blue2">
+
+    <br>
+    <label>      Green Value(0-255):</label>
+    <input type = "text" id = "green2">
+    
+    <br>
+    <br>
+    <label>Border Width:</label>
+    <input type = "text" id = "second2">
+    <br>
+    <button id = "click4" onclick = "changeBorder()">Change Border</button>
+    <script>
+        function changeBorder()
+        {
+            let red = document.getElementById("red").value
+            let blue = document.getElementById("blue").value
+            let green = document.getElementById("green").value
+            document.getElementById("infoBox").style.backgroundColor = "rgb("+red+", "+blue+", "+green+")"
+            let red2 = document.getElementById("red2").value
+            let blue2 = document.getElementById("blue2").value
+            let green2 = document.getElementById("green2").value
+            let borderwidth = document.getElementById("second2").value;
+            document.getElementById("infoBox").style.borderWidth =borderwidth +"px";
+            document.getElementById("infoBox").style.borderColor = "rgb("+red2+", "+blue2+", "+green2+")"
+        }
+    </script>
+
+    <p class="paragraph" id = "infoBox">
+        a distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering.
+        "the concluding paragraph"
+    </p>
+   
+</body>
+</html>

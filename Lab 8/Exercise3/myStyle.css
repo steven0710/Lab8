@@ -1,0 +1,30 @@
+body{
+    background-color: blue;
+    color: red;
+    font-family:'Courier New', Courier, monospace;
+    background-image: url(https://lh3.googleusercontent.com/proxy/5yqU-WS_eplSxObsyoG7jM1hOnsC3qkuDWRBK9ZZM94SZgTx_OCS7R-pE0CeTrFQ9OYJ-QC8KW52CKFCFZDybAhut9jKMkU);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+}
+
+.photo img{
+    width: 200px;
+    height: 200px;
+}
+
+body:hover{
+    background-color:purple;
+    color: Gray;
+}
+
+
+.paragraph{
+    color:black;
+    background-color:white;
+}
+
+a{
+    color:black;
+    background-color: white;
+}
